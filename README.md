@@ -48,19 +48,39 @@ Rate limiting and input validation
 
 Pre-built for use with frontend apps or no-code tools
 
-📂 Suggested Folder Structure
-css
-Copy
-Edit
-📁 task-management-backend/
- ┣ 📂 api
- ┃ ┣ 📜 auth.js
- ┃ ┣ 📜 users.js
- ┃ ┗ 📜 tasks.js
- ┣ 📂 middleware
- ┣ 📂 models
- ┣ 📂 services
- ┣ 📜 .env.example
- ┣ 📜 app.js / main.py
- ┣ 📜 swagger.yaml
- ┗ 📜 README.md
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── taskmanagement/
+│   │           ├── controller/
+│   │           │   ├── AuthController.java
+│   │           │   └── TaskController.java
+│   │           ├── entity/
+│   │           │   ├── ERole.java
+│   │           │   ├── Role.java
+│   │           │   ├── Task.java
+│   │           │   ├── TaskPriority.java
+│   │           │   ├── TaskStatus.java
+│   │           │   └── User.java
+│   │           ├── payload/
+│   │           │   └── request/
+│   │           │       ├── LoginRequest.java
+│   │           │       ├── SignupRequest.java
+│   │           │       └── TaskRequest.java
+│   │           ├── repository/
+│   │           │   ├── RoleRepository.java
+│   │           │   ├── TaskRepository.java
+│   │           │   └── UserRepository.java
+│   │           ├── security/
+│   │           │   ├── jwt/
+│   │           │   │   ├── AuthEntryPointJwt.java
+│   │           │   │   ├── AuthTokenFilter.java
+│   │           │   │   └── JwtUtils.java
+│   │           │   ├── services/
+│   │           │   │   ├── UserDetailsImpl.java
+│   │           │   │   └── UserDetailsServiceImpl.java
+│   │           │   └── SecurityConfig.java
+│   │           └── TaskManagementApplication.java
+│   └── resources/
+│       └── application.properties
